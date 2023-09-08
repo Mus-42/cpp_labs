@@ -10,22 +10,24 @@ file(GLOB_RECURSE C_FILES "labs/*.c")
 file(GLOB_RECURSE CXX_FILES "labs/*.cpp")
 
 project(CLabs LANGUAGES C)
+
 foreach(C_FILE IN LISTS C_FILES)
     string(REPLACE ".c" "" LAB_TASK_NAME ${C_FILE})
     string(REPLACE "${CMAKE_SOURCE_DIR}/labs/" "" LAB_TASK_NAME ${LAB_TASK_NAME})
     string(REPLACE "/" "_" LAB_TASK_NAME ${LAB_TASK_NAME})
     string(TOUPPER ${LAB_TASK_NAME} LAB_TASK_NAME)
-	add_executable(${LAB_TASK_NAME} ${C_FILE})
+    add_executable(${LAB_TASK_NAME} ${C_FILE})
     math(EXPR TOTAL_C_LABS_COUNT ${TOTAL_C_LABS_COUNT}+1)
 endforeach()
 
 project(CXXLabs LANGUAGES CXX)
+
 foreach(CXX_FILE IN LISTS CXX_FILES)
     string(REPLACE ".cpp" "" LAB_TASK_NAME ${CXX_FILE})
     string(REPLACE "${CMAKE_SOURCE_DIR}/labs/" "" LAB_TASK_NAME ${LAB_TASK_NAME})
     string(REPLACE "/" "_" LAB_TASK_NAME ${LAB_TASK_NAME})
     string(TOUPPER ${LAB_TASK_NAME} LAB_TASK_NAME)
-	add_executable(${LAB_TASK_NAME} ${CXX_FILE})
+    add_executable(${LAB_TASK_NAME} ${CXX_FILE})
     math(EXPR TOTAL_CXX_LABS_COUNT ${TOTAL_CXX_LABS_COUNT}+1)
 endforeach()
 
