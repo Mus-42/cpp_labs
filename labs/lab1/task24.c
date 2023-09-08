@@ -6,5 +6,5 @@
 int main(void) {
     int n, m;
     scanf("%i%i", &n, &m);
-    printf("%*i\n%*i\n", n, m, 2*n, m*m);
+    printf("%*i\n%*i\n", n, m, 2 * n, m * m);
 }

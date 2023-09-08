@@ -6,5 +6,5 @@
 int main(void) {
     float v;
     scanf("%*[ *]%f", &v);
-    printf("%f", v*v*v);
+    printf("%f", v * v * v);
 }

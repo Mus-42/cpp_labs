@@ -11,8 +11,8 @@ int main(void) {
         "- %c - %c - %c\n"
         "%c | %c | %c\n"
         "- %c - %c - %c\n",
-        digit, digit, digit, 
-        digit, digit, digit, 
+        digit, digit, digit,
+        digit, digit, digit,
         digit, digit, digit
     );
 }
