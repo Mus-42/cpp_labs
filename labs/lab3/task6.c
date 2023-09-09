@@ -8,21 +8,21 @@ int main(void) {
     double a, b, c;
     scanf("%lf%lf%lf", &a, &b, &c);
 
-    if (abs(a) < abs(b)) {
+    if (fabs(a) < fabs(b)) {
         double t = a;
         a = b;
         b = t;
     }
-    if (abs(a) < abs(c)) {
+    if (fabs(a) < fabs(c)) {
         double t = a;
         a = c;
         c = t;
     }
-    if (abs(c) > abs(b)) {
+    if (fabs(c) > fabs(b)) {
         double t = c;
         c = b;
         b = t;
     }
 
     printf("max: %lf min: %lf\n", a, c);
-}   
+}

@@ -13,10 +13,10 @@ int main(void) {
     // n = n0 + n1 * 10 + n2 * 100 
     unsigned n0 = n % 10;
     n /= 10;
-    unsigned n1 = n % 10; 
+    unsigned n1 = n % 10;
     n /= 10;
     unsigned n2 = n;
-    
+
     if (n0 == n1 || n1 == n2) {
         puts("digits repetition detected");
         return 0;

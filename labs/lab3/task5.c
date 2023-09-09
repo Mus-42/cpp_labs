@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <math.h>
 
 // Lab 3 Task 5
 
@@ -15,4 +14,4 @@ int main(void) {
     }
 
     printf("max: %lf min: %lf\n", a, b);
-}   
+}
