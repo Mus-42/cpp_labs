@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
+
 // Lab 2 Task 6
 
 double triangle_area(double a_x, double a_y, double b_x, double b_y, double c_x, double c_y) {
