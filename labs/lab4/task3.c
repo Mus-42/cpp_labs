@@ -31,7 +31,7 @@ double t4_b(int n, double x, double y) {
     return sum;
 }
 
-int main() {
+int main(void) {
     // a)
     printf("a) %lf\n", t4_a(3, 2.));
     // b)

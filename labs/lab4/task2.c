@@ -4,7 +4,7 @@
 
 // Lab 4 Task 2
 
-int main() {
+int main(void) {
     int n;
     scanf("%d", &n);
     printf("%d! = 1", n);

@@ -11,7 +11,7 @@ double rec_sin_n(int n, double x) {
     return x;
 }
 
-int main() {
+int main(void) {
     int n;
     double x;
     scanf("%d%lf", &n, &x);
