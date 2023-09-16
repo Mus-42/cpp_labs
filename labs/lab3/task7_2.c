@@ -32,7 +32,7 @@ void solve_sq_eq(double a, double b, double c) {
 
 
 
-int main() {
+int main(void) {
     // example input: `1 -16 15`
 
     // a) ax^2 + bx + c = 0
