@@ -15,7 +15,7 @@ unsigned input_array(int **const arr) {
         m++;
     }
     *arr = m_beg;
-    return m-m_beg;
+    return (unsigned)(m-m_beg);
 }
 
 int main(void) {
@@ -27,7 +27,7 @@ int main(void) {
         int num = arr[i];
         bool is_sqruare = false, is_cube = false;
         // naive check
-        for (unsigned j = 1; j*j <= num; j++) {
+        for (int j = 1; j*j <= num; j++) {
             is_sqruare |= j * j == num; 
             is_cube |= j * j * j == num; 
         }
