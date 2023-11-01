@@ -17,7 +17,7 @@ bool input_square(ChessSquare* square) {
     char f, r;
     if (2 != scanf("%c%c", &f, &r))
         return false;
-    f = toupper(f);
+    f = (char)toupper(f);
     if (f < 'A' || f > 'H' || r < '1' || r > '7') 
         return false;
     square->f = f - 'A';
