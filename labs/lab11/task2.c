@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <math.h>
 #include <stdlib.h>
 
 // Lab 11 Task 2
@@ -22,7 +23,7 @@ int main(void) {
 
     double num;
     while (!feof(f_file) && fread(&num, sizeof(double), 1, f_file) == 1) {
-        fwrite(&num, sizeof(double), 1, abs(num) < a ? g_file : f_file_out);
+        fwrite(&num, sizeof(double), 1, fabs(num) < a ? g_file : f_file_out);
     }
 
     fclose(f_file);

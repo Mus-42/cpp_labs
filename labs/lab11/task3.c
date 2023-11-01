@@ -1,8 +1,18 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 // Lab 11 Task 3
+
+bool has_3_divs(int num) {
+    int i = 2;
+    while (i * i < num) {
+        if (num % i == 0) return false;
+        i++;
+    }
+    return i * i == num;
+}
 
 int main(void) {
     char f_filename[256];
@@ -17,8 +27,7 @@ int main(void) {
     int num;
     while (scanf("%d", &num) == 1 && num != 0) {
         fwrite(&num, sizeof(int), 1, f_file);
-        // TODO implement correct condition for g file
-        if (num % 2 == 0) {
+        if (has_3_divs(num)) {
             fwrite(&num, sizeof(int), 1, g_file);
         }
     }

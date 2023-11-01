@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -18,7 +19,7 @@ int max_rect_index(const char* filename, float* max_area_out) {
     int i = 0, max_i = 0;
     float max_area = 0.;
     while (!feof(f) && fread(&r, sizeof(r), 1, f) == 1) {
-        float area = abs((r.a.x - r.b.x) * (r.a.y - r.b.y));
+        float area = fabsf((r.a.x - r.b.x) * (r.a.y - r.b.y));
         if (area > max_area) {
             max_area = area;
             max_i = i;
