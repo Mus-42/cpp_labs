@@ -5,7 +5,7 @@
 
 int main(void) {
     // Some input number
-    const float x = 1.426;
+    const float x = 1.426f;
 
     // a) x^4 in 2 ops
     float a0 = x * x; // x^2

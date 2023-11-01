@@ -10,6 +10,6 @@ uint16_t uint8mul(uint8_t a, uint8_t b) {
 
 int main(void) {
     uint8_t a, b;
-    scanf("%hhu", &a, &b);
+    scanf("%hhu%hhu", &a, &b);
     printf("%hu", uint8mul(a, b));
 }

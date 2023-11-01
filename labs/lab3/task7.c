@@ -20,7 +20,7 @@ double* solve_quadratic(double a, double b, double c, double* roots_out) {
     return roots_out;
 }
 
-void print_roots(int n, double* roots, char prefix) {
+void print_roots(size_t n, double* roots, char prefix) {
     if (n == 0) {
         printf("%c) no solutions\n", prefix);
     } else {
@@ -38,7 +38,7 @@ int main(void) {
     // a) ax^2 + bx + c = 0
     double a, b, c, quadratic_roots[2], biquadratic_roots[4], * r = biquadratic_roots;
     scanf("%lf%lf%lf", &a, &b, &c);
-    int roots_count = solve_quadratic(a, b, c, quadratic_roots) - quadratic_roots;
+    size_t roots_count = solve_quadratic(a, b, c, quadratic_roots) - quadratic_roots;
     print_roots(roots_count, quadratic_roots, 'a');
 
     // b) ax^4 + bx^2 + c = 0

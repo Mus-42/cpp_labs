@@ -22,7 +22,7 @@ int seq_next(int num, int k, int* n) {
 }
 
 int tenpow_k(int k) {
-    int v = 1, n;
+    int v = 1, n = 0;
     while (k) {
         k -= seq_next(v, k, &n);
         v *= 10;
@@ -31,7 +31,7 @@ int tenpow_k(int k) {
 }
 
 int natural_k(int k) {
-    int v = 1, n;
+    int v = 1, n = 0;
     while (k) {
         k -= seq_next(v, k, &n);
         v += 1;
@@ -40,7 +40,7 @@ int natural_k(int k) {
 }
 
 int square_k(int k) {
-    int v = 1, n;
+    int v = 1, n = 0;
     while (k) {
         k -= seq_next(v * v, k, &n);
         v += 1;
@@ -52,7 +52,7 @@ int fib_k(int k) {
     if (k == 1) return 0;
     if (k == 2) return 1;
     k -= 2;
-    int n, a = 0, b = 1;
+    int n = 0, a = 0, b = 1;
     while (k) {
         int c = a + b;
         a = b;

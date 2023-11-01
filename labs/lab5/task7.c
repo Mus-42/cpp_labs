@@ -9,7 +9,7 @@ double sn(unsigned n) {
     }
     double sum = 6., k2 = 4.;
     double a0 = 1., a1 = 0., b0 = 1.;
-    for (int i = 3; i <= n; i++) {
+    for (unsigned i = 3; i <= n; i++) {
         b0 += a0;
         k2 *= 2.;
         double a_k = a0 / i + a1 * b0;

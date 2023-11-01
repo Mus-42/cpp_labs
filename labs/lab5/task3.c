@@ -18,7 +18,7 @@ unsigned steps_to_1(uint64_t n) {
 }
 
 int main(void) {
-    unsigned max_n, max_steps = 0;
+    unsigned max_n = 0, max_steps = 0;
     for (unsigned i = 1; i <= 1000; i++) {
         unsigned steps = steps_to_1(i);
         if (steps > max_steps) {

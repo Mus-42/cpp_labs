@@ -43,7 +43,7 @@ int solve_eq_in_integers(int n, const int* coefficients, int* roots) {
             }
         }
     }
-    return roots-roots_beg;
+    return (int)(roots-roots_beg);
 }
 
 int main(void) {

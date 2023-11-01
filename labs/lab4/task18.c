@@ -14,7 +14,7 @@ int main(void) {
     const double x2 = x*x;
     double x_k = 1.; // x_0
 
-    for (int i = 1; i <= k; i++) {
+    for (unsigned i = 1; i <= k; i++) {
         // x_i
         x_k *= -1. * x2 / (i*2*(i*2 + 1));
     }
