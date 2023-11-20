@@ -3,6 +3,8 @@
 #include <string>
 #include <string_view>
 
+// Lab 13 task 3
+
 std::string trim_words(std::string_view s) {
     bool is_word = false;
     std::string ret;
@@ -22,5 +24,4 @@ int main() {
     std::string s;
     std::getline(std::cin, s);
     std::cout << '`' << trim_words(s) << '`' << '\n';
-
 }
