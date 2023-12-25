@@ -1,4 +1,4 @@
-#include <memory>
+#include <vector>
 #include <string>
 #include <iostream>
 
@@ -10,7 +10,7 @@ public:
     BlackBox() noexcept = default;
 
     bool is_empty() const noexcept {
-        return m_root == nullptr;
+        return m_storage.empty();
     }
 
     void push(const T& el) {
@@ -26,7 +26,7 @@ public:
     }
 
     const T& xpop() const {
-        return m_root.back();
+        return m_storage.back();
     }
 private:
     std::vector<T> m_storage;

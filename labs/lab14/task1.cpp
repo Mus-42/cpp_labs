@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstdio>
 #include <string>
@@ -8,7 +9,7 @@ int main() {
     freopen("data/lab14_task1.txt", "r", stdin);
     double value;
     std::cin >> value;
-    while (true) {    
+    while (true) {
         char op;
         std::cin >> op;
         if (op == '=') {
@@ -27,4 +28,4 @@ int main() {
         }
     }
     std::cout << value << '\n';
-}  
+}

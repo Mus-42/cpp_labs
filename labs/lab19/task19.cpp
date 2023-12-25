@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
 #include <iostream>
 #include <deque>
@@ -16,7 +17,7 @@ int main() {
     d.erase(d.begin() + d.size() / 2);
     if (d.size() % 2 == 1) d.erase(d.begin() + d.size() / 2);
 
-    
+
     for (auto& v : d) {
         std::cout << v;
     }
