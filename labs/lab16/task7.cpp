@@ -2,6 +2,8 @@
 #include <numbers>
 #include <cmath>
 
+// Lab 16 Task 7
+
 struct Vec2 {
     float x, y;
 };
@@ -16,13 +18,13 @@ struct Shape {
 };
 
 struct Trapeze: Shape {
-    float x00, x01, y0; 
+    float x00, x01, y0;
     float x10, x11, y1;
 
     Trapeze(float x00, float x01, float y0, float x10, float x11, float y1) noexcept : x00(x00), x01(x01), y0(y0), x10(x10), x11(x11), y1(y1) {}
 
     virtual float area() const override {
-        return (std::fabsf(x00-x01) + std::fabsf(x10-x11)) * 0.5f * std::fabsf(y1-y0); 
+        return (std::fabsf(x00-x01) + std::fabsf(x10-x11)) * 0.5f * std::fabsf(y1-y0);
     }
     virtual Vec2 mass_center() const override {
         float w0 = std::fabsf(x00-x01);
@@ -34,12 +36,12 @@ struct Trapeze: Shape {
 struct Parallelogram: Shape {
     // point 0, 2 should be at opposite corners
 
-    float x0, y0; 
-    float x1, y1; 
+    float x0, y0;
+    float x1, y1;
     float x2, y2;
 
     Parallelogram(float x0, float y0, float x1, float y1, float x2, float y2) noexcept : x0(x0), y0(y0), x1(x1), y1(y1), x2(x2), y2(y2) {}
-    
+
     virtual float area() const override {
         return std::fabsf((x0-x1)*(y2-y1) - (x2-x1)*(y0-y1)); // cross-product based area calc.
     }
@@ -87,7 +89,7 @@ int main() {
     };
 
     auto p = Parallelogram {
-        1.f, 0.f, 
+        1.f, 0.f,
         0.f, 0.f,
         1.f, 1.f,
     };

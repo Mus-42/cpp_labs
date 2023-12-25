@@ -3,6 +3,8 @@
 #include <iostream>
 #include <numeric>
 
+// Lab 21 Task 3
+
 int main() {
     size_t n, k;
     std::cin >> n >> k;

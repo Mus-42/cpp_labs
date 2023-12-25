@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Lab 8 task 1
+// Lab 8 Task 1
 
 int main(void) {
     int mat[3][3] = {{1,2,3,}, {4,5,6}, {7,8,9}};
@@ -9,9 +9,9 @@ int main(void) {
     scanf("%d%d", &m, &n);
     for (int i = 0; i < 3; i++)
         for (int j = 0; j < 3; j++)
-            if (mat[i][j] == m) 
+            if (mat[i][j] == m)
                 mat[i][j] = n;
-    
+
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++)
             printf("%d ", mat[i][j]);

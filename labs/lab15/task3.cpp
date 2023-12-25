@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
 
-// Lab 15 task 3
+// Lab 15 Task 3
 
 class Poly {
-public: 
+public:
     Poly() noexcept = default;
     Poly(const Poly&) noexcept = default;
     Poly(Poly&&) noexcept = default;

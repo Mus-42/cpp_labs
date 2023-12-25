@@ -2,7 +2,7 @@
 #include <string>
 #include <charconv>
 
-// Lab 12 task 2
+// Lab 12 Task 2
 
 
 int main() {

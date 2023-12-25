@@ -2,6 +2,8 @@
 #include <iostream>
 #include <algorithm>
 
+// Lab 21 Task 6
+
 int main() {
     size_t n;
     std::cin >> n;

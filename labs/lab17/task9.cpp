@@ -5,7 +5,7 @@
 #include <vector>
 #include <algorithm>
 
-// lab17 task9
+// lab17 Task 9
 
 class WrongCharacter: public std::invalid_argument {
 public:
@@ -59,5 +59,5 @@ int main() {
         s.push('e');
     } catch(WrongCharacter& e) {
         std::cout << e.what() << std::endl;
-    } 
+    }
 }

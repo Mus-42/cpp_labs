@@ -4,7 +4,9 @@
 #include <type_traits>
 #include <concepts>
 
-template<std::input_iterator It1, std::input_or_output_iterator It2, typename F> 
+// Lab 21 Task 17
+
+template<std::input_iterator It1, std::input_or_output_iterator It2, typename F>
 void for_each(const It1 beg1, const It1 end1, It2 beg2, [[maybe_unused]] It2 end2, F&& f) {
     std::transform(beg1, end1, beg2, beg2, std::move(f));
 }

@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+// Lab 10 Task 8
+
 typedef struct {
     double price;
     unsigned circulation;
@@ -18,4 +20,6 @@ double average_cost_with_less_than10000_circulations(Magazine* magazines, size_t
     return sum_cost / sum_count;
 }
 
-int main() {}
+int main(void) {
+    // TODO usage example
+}

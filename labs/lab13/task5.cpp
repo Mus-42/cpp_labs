@@ -2,12 +2,12 @@
 #include <string_view>
 #include <vector>
 
-// Lab 13 task 4
+// Lab 13 Task 4
 
 std::vector<std::string_view> partial_split(std::string_view s, std::string_view sep) {
     std::vector<std::string_view> ret{};
-    if (s.substr(0, sep.size()) == sep) 
-        s.remove_prefix(sep.size()); 
+    if (s.substr(0, sep.size()) == sep)
+        s.remove_prefix(sep.size());
     while (!s.empty()) {
         size_t pos = s.find(sep);
         if (pos == std::string_view::npos) {

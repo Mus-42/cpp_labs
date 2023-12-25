@@ -1,6 +1,8 @@
 #include <iostream>
 #include <set>
 
+// Lab 20 Task 2
+
 int main() {
     size_t n;
     std::cin >> n;
@@ -11,7 +13,7 @@ int main() {
         std::cin >> v;
         s.insert(v);
     }
-    
+
     while (s.size() > 1) {
         std::set<int> s0;
         auto iter = s.begin();

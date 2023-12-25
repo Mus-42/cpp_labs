@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 
+// Lab 21 Task 7
+
 int main() {
     std::string s;
     std::cin >> s;

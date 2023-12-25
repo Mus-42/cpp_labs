@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Lab 8 task 5
+// Lab 8 Task 5
 
 void transpose_mat(double* mat, int n) {
     for (int i = 0; i < n; i++)

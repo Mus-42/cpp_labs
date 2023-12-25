@@ -2,6 +2,8 @@
 #include <vector>
 #include <iostream>
 
+// Lab 19 Task 4
+
 int main() {
     size_t n, m;
     std::vector<std::vector<double>> mat;

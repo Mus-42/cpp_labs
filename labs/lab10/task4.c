@@ -22,7 +22,7 @@ inline void rat_display(Rational rat) {
 inline unsigned gcd_impl(unsigned a, unsigned b) {
     if (b == 0) return a;
     return gcd_impl(b, a%b);
-} 
+}
 
 inline Rational rat_simplify(Rational rat) {
     unsigned nom = (unsigned)abs(rat.nomirator);
@@ -61,9 +61,10 @@ inline Rational rat_div(Rational a, Rational b) {
 }
 
 inline int rat_cmp(Rational a, Rational b) {
+    // TODO hanle overflow with larger type (int64_t?)
     return a.nomirator * b.denomirator - b.nomirator * a.denomirator;
 }
 
 int main(void) {
-    // TODO
+    // TODO solve main Task using implemented above functions
 }

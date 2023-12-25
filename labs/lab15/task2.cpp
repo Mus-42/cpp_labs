@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdint>
 
+// Lab 15 Task 2
+
 class Point {
 public:
     Point() = default;
@@ -35,8 +37,8 @@ int main() {
         std::cout << "enter point? (y|n)\n";
         char ans;
         std::cin >> ans;
-        if (ans != 'y' && ans != 'Y') 
-            break;  
+        if (ans != 'y' && ans != 'Y')
+            break;
         Point cur = Point::read_point();
         p += dist(prev, cur);
         prev = cur;

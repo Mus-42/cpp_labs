@@ -3,10 +3,10 @@
 #include <cstdio>
 #include <string>
 
-// Lab 14 task 1
+// Lab 14 Task 1
 
 int main() {
-    freopen("data/lab14_task1.txt", "r", stdin);
+    freopen("data/lab14_Task1.txt", "r", stdin);
     double value;
     std::cin >> value;
     while (true) {

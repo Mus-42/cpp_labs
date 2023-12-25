@@ -3,7 +3,7 @@
 #include <string>
 #include <fstream>
 
-// Lab 14 task 5
+// Lab 14 Task 5
 
 void create_example_file() {
     constexpr std::string_view data = R"(
@@ -12,13 +12,13 @@ mus, 2, comp math 1, 20, 10, 30, 5,
 nedilya, 2, comp math 1, 30, 30, 30, 30
 )";
 
-    std::ofstream("data/lab14_task5_out1.txt") << data;
+    std::ofstream("data/lab14_Task5_out1.txt") << data;
 }
 
 int main() {
     create_example_file();
 
-    std::ifstream data_in("data/lab14_task5_out1.txt");
+    std::ifstream data_in("data/lab14_Task5_out1.txt");
     std::string buf;
     std::string student;
     double av = 30.;

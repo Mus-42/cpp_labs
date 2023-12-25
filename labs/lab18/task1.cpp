@@ -1,6 +1,8 @@
 #include <iostream>
 #include <type_traits>
 
+// Lab 18 Task 1
+
 namespace my_max {
     template<typename T>
     const T& max(const T& a, const std::type_identity_t<T>& b) {

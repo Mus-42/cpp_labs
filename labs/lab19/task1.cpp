@@ -1,5 +1,7 @@
 #include <iostream>
 
+// Lab 19 Task 1
+
 int main() {
     unsigned n;
     std::cin >> n;

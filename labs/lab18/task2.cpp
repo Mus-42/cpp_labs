@@ -2,12 +2,14 @@
 #include <string>
 #include <iostream>
 
+// Lab 18 Task 2
+
 template<typename T>
 class Stack {
     struct Node;
 
     using node_ptr = std::unique_ptr<Node>;
-    
+
     struct Node {
         T el;
         node_ptr prev;
@@ -51,7 +53,7 @@ int main() {
     for (char ch : buf) {
         s.push(ch);
     }
-    
+
     while (!s.is_empty()) {
         std::cout << s.top();
         s.pop();

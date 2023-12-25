@@ -1,6 +1,8 @@
 #include <list>
 #include <iostream>
 
+// Lab 21 Task 2
+
 int main() {
     size_t n;
     int x;

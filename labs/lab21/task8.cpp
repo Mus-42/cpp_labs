@@ -5,6 +5,8 @@
 #include <cctype>
 #include <string_view>
 
+// Lab 21 Task 8
+
 int main() {
     std::string s;
     std::getline(std::cin, s);

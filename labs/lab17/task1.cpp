@@ -4,6 +4,8 @@
 #include <exception>
 #include <stdexcept>
 
+// Lab 17 Task 1
+
 class WrongRatio: public std::invalid_argument {
 public:
     WrongRatio() : std::invalid_argument("wrong ratio: denominator can't be zero") {}
@@ -19,13 +21,13 @@ public:
     Rational() = default;
     Rational(const Rational&) = default;
     Rational(Rational&&) = default;
-    
+
     Rational(int nominator, unsigned denominator) : m_nominator(nominator), m_denominator(denominator) {
         if (m_denominator == 0)
             throw WrongRatio();
         this->reduce();
     }
-    
+
     Rational& operator=(const Rational&) = default;
     Rational& operator=(Rational&&) = default;
 

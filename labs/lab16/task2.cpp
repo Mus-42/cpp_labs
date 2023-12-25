@@ -2,7 +2,7 @@
 #include <type_traits>
 #include <cmath>
 
-// Lab 16 task 2
+// Lab 16 Task 2
 
 struct Point {
     using dimensions = std::integral_constant<unsigned, 2>;

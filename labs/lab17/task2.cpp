@@ -2,7 +2,7 @@
 #include <string_view>
 #include <iostream>
 
-// lab17 task2
+// lab17 Task 2
 
 class Human {
 public:
@@ -21,9 +21,9 @@ public:
     HumanWithUniversity() noexcept = default;
     HumanWithUniversity(std::string name, unsigned age, bool gender, std::string university) noexcept : Human(name, age, gender), m_university(std::move(university)) {}
 
-    std::string_view get_university() const { 
+    std::string_view get_university() const {
         return m_university;
-    } 
+    }
 protected:
     std::string m_university;
 };
@@ -40,7 +40,7 @@ protected:
 class Lecturer: virtual public HumanWithUniversity {
 public:
     Lecturer() noexcept = default;
-    Lecturer(std::string name, unsigned age, bool gender, std::string university, std::string job_pos, unsigned salary) noexcept : 
+    Lecturer(std::string name, unsigned age, bool gender, std::string university, std::string job_pos, unsigned salary) noexcept :
         HumanWithUniversity(name, age, gender, university), m_job_pos(std::move(job_pos)), m_salry(salary)  {}
 
 
@@ -53,7 +53,7 @@ class Postgraduate: public Student, Lecturer {
 public:
     Postgraduate() noexcept = default;
 
-    Postgraduate(std::string name, unsigned age, bool gender, std::string university, unsigned course, std::string job_pos, unsigned salary) noexcept : 
+    Postgraduate(std::string name, unsigned age, bool gender, std::string university, unsigned course, std::string job_pos, unsigned salary) noexcept :
         Student(name, age, gender, university, course), Lecturer(name, age, gender, university, job_pos, salary) {}
 };
 

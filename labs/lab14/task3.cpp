@@ -3,17 +3,17 @@
 #include <cstdio>
 #include <string>
 
-// Lab 14 task 3
+// Lab 14 Task 3
 
 int main() {
-    freopen("data/lab14_task3.txt", "r", stdin);
-    freopen("data/lab14_task3_out.txt", "w", stdout);
+    freopen("data/lab14_Task3.txt", "r", stdin);
+    freopen("data/lab14_Task3_out.txt", "w", stdout);
 
     std::string w;
     while (std::cin >> w) {
         std::string_view word = w;
         for (size_t sep_beg = 0; sep_beg < word.size();) {
-            size_t sep_size = 
+            size_t sep_size =
                 std::min(
                     std::min(
                         word.size(),

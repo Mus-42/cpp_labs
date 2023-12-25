@@ -20,7 +20,7 @@ int max_in_array(const int (*array)[5]) {
     return ret;
 }
 
-int main() {
+int main(void) {
     int arr[5];
     scan_array(&arr);
     int max = max_in_array(&arr);

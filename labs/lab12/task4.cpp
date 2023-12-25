@@ -3,7 +3,7 @@
 #include <fstream>
 #include <vector>
 
-// Lab 12 task 4
+// Lab 12 Task 4
 
 int main() {
     size_t n;
@@ -16,8 +16,8 @@ int main() {
         std::cin >> m[i];
     }
 
-    constexpr const char* input_file = "data/lab12_task4_inputs.txt";
-    constexpr const char* output_file = "data/lab12_task4_outputs.txt";
+    constexpr const char* input_file = "data/lab12_Task4_inputs.txt";
+    constexpr const char* output_file = "data/lab12_Task4_outputs.txt";
 
     {
         std::ifstream f(input_file);

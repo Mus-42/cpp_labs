@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Lab8 task 7
+// Lab8 Task 7
 
 #define N 32
 
@@ -10,14 +10,14 @@ double calc_det(double* mat, unsigned n, unsigned i, unsigned* p, unsigned used)
         unsigned inv_count = 0;
         for (unsigned j = 0; j < n; j++)
             for (unsigned k = j+1; k < n; k++) {
-                if (p[k] > p[j]) 
+                if (p[k] > p[j])
                     inv_count++;
             }
-            
+
         double det = 1.;
         for (unsigned j = 0; j < n; j++)
             det *= mat[j*n + p[j]];
-            
+
         return inv_count & 1 ? det : -det;
     }
     double sum = 0.;
@@ -34,7 +34,7 @@ int main(void) {
     double mat[N*N];
     unsigned perm[N];
 
-    
+
     unsigned n;
     scanf("%u", &n);
     for (unsigned i = 0; i < n; i++)

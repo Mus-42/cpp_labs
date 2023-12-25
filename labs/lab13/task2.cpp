@@ -2,7 +2,7 @@
 #include <string>
 #include <cctype>
 
-// Lab 13 task 2
+// Lab 13 Task 2
 
 void remove_mid(std::string& s) {
     const size_t first_dot = s.find('.');

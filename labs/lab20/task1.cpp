@@ -2,6 +2,8 @@
 #include <string>
 #include <map>
 
+// Lab 20 Task 1
+
 int main() {
     // let our file be open on stdin
     std::map<std::string, unsigned> nums;

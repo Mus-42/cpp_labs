@@ -2,19 +2,21 @@
 #include <numeric>
 #include <compare>
 
+// Lab 15 Task 1
+
 class Rational {
 public:
     Rational() = default;
     Rational(const Rational&) = default;
     Rational(Rational&&) = default;
-    
+
     Rational(int nominator, unsigned denominator) noexcept : m_nominator(nominator), m_denominator(denominator) {
         if (m_denominator == 0) {
             m_denominator = 1;
         }
         this->reduce();
     }
-    
+
     Rational& operator=(const Rational&) = default;
     Rational& operator=(Rational&&) = default;
 

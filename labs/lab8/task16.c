@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Lab 8 task 16
+// Lab 8 Task 16
 
 // mat size = 2n + 1
 void transpose_second_diag(double* mat, int n) {

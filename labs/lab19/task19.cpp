@@ -3,6 +3,8 @@
 #include <iostream>
 #include <deque>
 
+// Lab 19 Task 19
+
 int main() {
     freopen("input.txt", "r", stdin);
 

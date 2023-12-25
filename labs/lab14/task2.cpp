@@ -4,12 +4,12 @@
 #include <string>
 #include <cctype>
 
-// Lab 14 task 2
+// Lab 14 Task 2
 
 int main() {
-    freopen("data/lab14_task2.txt", "r", stdin);
-    freopen("data/lab14_task2_out.txt", "w", stdout);
-    
+    freopen("data/lab14_Task2.txt", "r", stdin);
+    freopen("data/lab14_Task2_out.txt", "w", stdout);
+
     bool change_letter = false;
     std::string w;
     while (std::cin >> w) {

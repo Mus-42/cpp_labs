@@ -1,11 +1,11 @@
 #include <cmath>
 #include <fstream>
 
-// Lab 12 task 9
+// Lab 12 Task 9
 
 int main() {
-    constexpr const char* input_file = "data/lab12_task9_inputs.txt";
-    constexpr const char* output_file = "data/lab12_task9_outputs.txt";
+    constexpr const char* input_file = "data/lab12_Task9_inputs.txt";
+    constexpr const char* output_file = "data/lab12_Task9_outputs.txt";
 
     std::ifstream in(input_file);
     std::ofstream out(output_file);

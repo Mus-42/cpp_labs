@@ -5,8 +5,8 @@
 // Lab 11 Task 12
 
 int main(void) {
-    FILE* f = fopen("data/lab11_task9_inputs.txt", "r");
-    FILE* o = fopen("out/lab11_task9_out.txt", "w");
+    FILE* f = fopen("data/lab11_Task9_inputs.txt", "r");
+    FILE* o = fopen("out/lab11_Task9_out.txt", "w");
     size_t buf_capacity = 128;
     size_t buf_i = 0;
     int* negative_nums = malloc(buf_capacity * sizeof(int));

@@ -6,11 +6,11 @@
 #include <charconv>
 #include <system_error>
 
-// Lab 14 task 16
+// Lab 14 Task 16
 
 int main() {
-    freopen("data/lab14_task16.txt", "r", stdin);
-    freopen("data/lab14_task16_out.txt", "w", stdout);
+    freopen("data/lab14_Task16.txt", "r", stdin);
+    freopen("data/lab14_Task16_out.txt", "w", stdout);
 
     std::string buf;
     std::cout << std::setprecision(10);

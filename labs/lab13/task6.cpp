@@ -3,7 +3,7 @@
 #include <string>
 #include <string_view>
 
-// Lab 13 task 6
+// Lab 13 Task 6
 
 std::string_view shortest_world(std::string_view s) {
     std::string_view shortest = s;

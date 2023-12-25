@@ -2,6 +2,8 @@
 #include <string>
 #include <iostream>
 
+// Lab 18 Task 3
+
 // in this implementation ve are wery lucky and "random" element from problem statement is always last element
 
 template<typename T>

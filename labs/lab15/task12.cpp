@@ -2,7 +2,7 @@
 #include <memory>
 #include <concepts>
 
-// Lab 15 task 12
+// Lab 15 Task 12
 
 template<typename T>
 class Vec {

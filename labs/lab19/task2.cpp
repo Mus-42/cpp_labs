@@ -2,6 +2,8 @@
 #include <vector>
 #include <cmath>
 
+// Lab 19 Task 2
+
 int main() {
     unsigned n, d;
     std::cin >> n >> d;
@@ -23,5 +25,5 @@ int main() {
         //    std::cout << q / len << ' ';
         //}
         //std::cout << std::endl;
-    } 
+    }
 }

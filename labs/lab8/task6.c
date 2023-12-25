@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Lab8 task 6
+// Lab8 Task 6
 
 #define N 100
 #define M 100

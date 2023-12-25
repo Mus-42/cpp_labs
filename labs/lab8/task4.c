@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Lab 8 task 4
+// Lab 8 Task 4
 
 void read_mat(double* mat, int n, int m) {
     for (int i = 0; i < n; i++)

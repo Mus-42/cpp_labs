@@ -3,6 +3,8 @@
 #include <iostream>
 #include <cctype>
 
+// Lab 21 Task 5
+
 int main() {
     std::string s;
     std::cin >> s;

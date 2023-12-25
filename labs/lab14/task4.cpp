@@ -4,10 +4,10 @@
 #include <string>
 #include <vector>
 
-// Lab 14 task 4
+// Lab 14 Task 4
 
 int main() {
-    freopen("data/lab14_task4.txt", "r", stdin);
+    freopen("data/lab14_Task4.txt", "r", stdin);
 
     std::string s;
     std::vector<std::string> tag_stack;

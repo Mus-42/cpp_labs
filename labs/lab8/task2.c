@@ -1,17 +1,17 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Lab 8 task 2
+// Lab 8 Task 2
 
 int main(void) {
     double mat[3][3] = {{1.0, 2,3,}, {4,5,6}, {7,8,9} };
-    
+
     {
         double a;
         int i, j;
         scanf("%d%d%lf", &i, &j, &a);
 
-        if (0 <= i && i < 3 && 0 <= j && j < 3) 
+        if (0 <= i && i < 3 && 0 <= j && j < 3)
             mat[i][j] = a;
     }
 

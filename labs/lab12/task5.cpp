@@ -7,10 +7,10 @@
 
 #include <vector>
 
-// Lab 12 task 5
+// Lab 12 Task 5
 
 int main() {
-    constexpr const char* input_file = "data/lab12_task5_inputs.txt";
+    constexpr const char* input_file = "data/lab12_Task5_inputs.txt";
     std::ifstream f(input_file);
 
     if (!f.is_open() || f.bad()) {

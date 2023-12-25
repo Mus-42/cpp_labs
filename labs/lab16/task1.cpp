@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-// Lab 16 task 1
+// Lab 16 Task 1
 
 class Person {
 public:
@@ -73,7 +73,7 @@ int main() {
     std::vector<Friend> friend_list;
 
     while (true) {
-        std::cout << 
+        std::cout <<
 R"(choose operation:
 0 - exit
 usage: 0
